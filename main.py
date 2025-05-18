@@ -86,7 +86,7 @@ application.add_handler(CommandHandler("track", track_video))
 
 # Періодична перевірка (30 хвилин)
 scheduler = AsyncIOScheduler()
-scheduler.add_job(check_descriptions, "interval", minutes=30)
+scheduler.add_job(check_descriptions, "interval", minutes=2)
 
 # Асинхронна функція для запуску
 async def main():
